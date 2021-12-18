@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+@import url("cart.css");
+@import url("form.css");
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+.mt-s {
+  margin-top: 8px;
+}
+.mr-s {
+  margin-right: 8px;
+}
+.mr-m {
+  margin-right: 16px;
+}
+.mt-m {
+  margin-top: 16px;
+}
+.mt-l {
+  margin-top: 24px;
+}
+.mt-xxl {
+  margin-top: 54px;
+}
+.mb-xl {
+  margin-bottom: 51px;
+}
+.mb-m {
+  margin-bottom: 16px;
+}
+.mb-s {
+  margin-bottom: 8px;
+}
+
+/* Container */
+.container {
+  padding: 64px 240px;
+  display: grid;
+  grid-template-columns: 60% auto;
+  grid-template-rows: auto auto;
+  gap: 115px;
+}
+.title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  color: #4e5150;
+}
+.left-icons {
+  position: absolute;
+  padding: 38px 15px;
+  color: #828282;
+  max-width: 24px;
+  max-height: 24px;
+}
+.underline {
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #bdbdbd;
+}
+
+@media only screen and (max-width: 1366px) {
+  .container {
+    padding: 64px 24px;
+    gap: 24px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .container {
+    grid-template-columns: auto;
+  }
+  .grid-container-1 {
+    grid-row: 2/2;
+    grid-column: 1/2;
+  }
+}
+
+@media only screen and (max-width: 415px) {
+  .container {
+    padding: 64px 8px;
+  }
+}

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+    <link rel="icon" href="devchallenges.png" />
+    <link rel="shortcut icon" type="image/x-icon" href="https://devchallenges.io/" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css">
+    <title>Devchallenges</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="grid-container-1">
+        <h1 class="mb-xl title">Checkout</h1>
+        <div class="contact-information">
+          <p class="contact-information-title mb-m">Contanct Information</p>
+          <form id="form-1" onsubmit="return confirm('Do You Really want to Submit the form?')">
+            <div>
+              <span class="material-icons left-icons">email</span>            
+              <label for="email" class="mb-s">E-mail</label>
+              <input class="input-text" class="mb-m" type="text" name="email" id="email" placeholder="Enter Your email..." required>
+            </div>
+            <div>
+              <span class="material-icons left-icons">call</span>            
+              <label for="phone" class="mb-s">Phone</label>
+              <input class="input-text" class="mb-m" type="text" name="phone" id="phone" placeholder="Enter Your phone..." required> 
+            </div>
+            <p class="contact-information-title mb-m mt-xxl">Shipping address</p>
+            <div>
+              <span class="material-icons left-icons">account_circle</span>            
+              <label for="full_name" class="mb-s">Full Name</label>
+              <input class="input-text" class="mb-m" type="text" name="full_name" id="full_name" value="Rodney Cotton" required>
+            </div>
+            <div>
+              <span class="material-icons left-icons">home</span>            
+              <label for="address" class="mb-s">Address</label>
+              <input class="input-text" class="mb-m" type="text" name="address" id="address" placeholder="Your Address.." required> 
+            </div>
+            <div>
+              <span class="material-icons left-icons">location_city</span>            
+              <label for="city" class="mb-s">City</label>
+              <input class="input-text" class="mb-m" type="text" name="city" id="city" placeholder="Your City.." required>
+            </div>
+            <div class="additional-form">
+              <div class="mr-m">
+                <span class="material-icons left-icons">public</span>            
+                <label for="country" class="mb-s">Country</label>
+                  <div class="custom-select">
+                    <select class="mb-m select" name="country" id="country" placeholder="Your country.." required>
+                      <option value="Indonesia">Indonesia</option>
+                      <option value="England">England</option>
+                      <option value="France">France</option>
+                      <option value="United States">United States</option>
+                    </select>
+                    <span class="material-icons custom-arrow left-icons">
+                        keyboard_arrow_down
+                    </span>
+                  </div>
+              </div>
+              <div>
+                <span class="material-icons left-icons">markunread_mailbox</span>            
+                <label for="postal_code" class="mb-s">Postal Code</label>
+                <input class="input-text" class="mb-m" type="text" name="postal_code" id="postal_code" placeholder="Your Postal Code.." required>
+              </div>
+            </div>
+            <div class="optional-check">
+              <input type="checkbox" id="checkbox" />
+              <label for="checkbox">Save this information for next time</label>
+            </div>
+            <button class="button-submit mt-l" type="submit" form="form-1">
+              Continue
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <div class="grid-container-cart-2">
+        <div class="cart-container">
+          <div class="cart">
+            <img src="./photo1.png" width="135" height="135" alt="">
+            <div class="cart-content">
+              <p class="cart-title">Vintage Bag</p>
+                <div class="cart-price">
+                  <p class="after-discount">$54.99</p>
+                  <p class="before-discount">$94.99</p>
+                </div>
+                <div class="cart-counter">
+                  <div class="decrease">
+                    <span class="material-icons">remove</span>            
+                  </div>
+                  <p class="count-items">1</p>
+                  <div class="increase">
+                    <span class="material-icons">add</span>            
+                  </div>
+                </div>
+            </div>
+          </div>
+          <div class="cart">
+            <img src="./photo2.png" width="135" height="135" alt="">
+            <div class="cart-content">
+              <p class="cart-title">Levi Shoes</p>
+                <div class="cart-price">
+                  <p class="after-discount">$74.99</p>
+                  <p class="before-discount">$124.99</p>
+                </div>
+                <div class="cart-counter">
+                  <div class="decrease">
+                    <span class="material-icons">remove</span>            
+                  </div>
+                  <p class="count-items">1</p>
+                  <div class="increase">
+                    <span class="material-icons">add</span>            
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="total-cart">
+          <div class="total-shipping">
+            <p class="title-price">Shipping</p>
+            <p class="total-price-piece">$19</p>
+          </div>
+          <div class="total-price">
+            <p class="title-price">Total</p>
+            <p class="total-price-piece">$148.98</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="mb-m">
+      created by <span class="underline">ridopurnomo86</span> - devChallenges.io
+    </footer>
+  </body>
+</html>

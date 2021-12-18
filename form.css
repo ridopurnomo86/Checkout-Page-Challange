@@ -1,0 +1,116 @@
+.contact-information-title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #333333;
+}
+
+.additional-form {
+  display: flex;
+}
+
+label {
+  display: block;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  color: #4f4f4f;
+}
+
+.input-text {
+  width: 100%;
+  display: block;
+  padding: 18px 52px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  border: 1px solid #828282;
+  border-radius: 12px;
+  margin-bottom: 12px;
+}
+
+/* Select Input */
+.custom-select {
+  position: relative;
+}
+
+select {
+  padding: 18px 52px;
+  font-weight: 600;
+  border-radius: 12px;
+  width: 100%;
+  font-size: 16px;
+  line-height: 20px;
+  color: #4f4f4f;
+  border: 1px solid #828282;
+  appearance: none;
+}
+.custom-arrow {
+  position: absolute;
+  top: -22px;
+  right: 24px;
+  z-index: 10;
+}
+.custom-arrow::before,
+.custom-arrow::after {
+  content: "";
+  position: absolute;
+  top: 42px;
+  right: -5px;
+  border-radius: 4px;
+  z-index: -1;
+}
+.custom-arrow::before {
+  padding: 8px;
+  background-color: #e0e0e0;
+}
+.additional-form .material-icons {
+  z-index: 10;
+}
+/* Optional Check */
+.optional-check {
+  display: flex;
+  align-items: center;
+}
+input[type="checkbox"] {
+  transition: box-shadow 0.3s;
+  background: lightgrey;
+  min-width: 21px;
+  height: 21px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  border: 1px solid #828282;
+  border-radius: 4px;
+  outline: none;
+  transition-duration: 0.3s;
+  background-color: #ffffff;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: all 0.2s ease-in-out;
+}
+input[type="checkbox"]:checked {
+  background-color: #f2994a;
+  border: none;
+}
+
+.button-submit {
+  padding: 17px 45px;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: #f2994a;
+  border-radius: 12px;
+  border: none;
+  float: right;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.button-submit:hover {
+  opacity: 0.9;
+}
